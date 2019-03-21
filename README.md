@@ -16,6 +16,6 @@
 
 6) allos adding user-defined attributes, the value of new attributes of the existing employee whould be empty of undefined
 
-A menue should be required to help the users realize function 2-4
+A menu should be required to help the users realize function 2-4
 
-Please think of a useful function that is not mentioned before, add it to your system
+**Please think of a useful function that is not mentioned before, add it to your system**
