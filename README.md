@@ -1,5 +1,5 @@
 # ENGG-1340-GP
-# Staff Management System
+**Staff Management System
 //target to develop a system to collect and manage the employee information
 //basic features: 
 //1) create a new employee id, name, age, role, and salary
