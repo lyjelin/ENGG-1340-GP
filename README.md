@@ -21,17 +21,17 @@ A menu should be required to help the users realize function 2-4
 **Please think of a useful function that is not mentioned before, add it to your system**
 
 
-**What the project does**
+[]**What the project does**
 
 
-**Why the project is useful**
+[]**Why the project is useful**
 
 
-**How users can get started with the project**
+[]**How users can get started with the project**
 
 
-**Where users can get help with your project**
+[]**Where users can get help with your project**
 
 
-**Who maintains and contributes to the project**
+[]**Who maintains and contributes to the project**
 
