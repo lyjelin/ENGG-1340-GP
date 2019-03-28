@@ -47,13 +47,13 @@ For many people, it would be really convenient if they can buy or refund movie t
 
 **2. Movie information**
   
-  1.. Start time 
+  1. Start time 
   
-  2.. Movie hour
+  2. Movie hour
   
-  3.. Price of the ticket (assuming all the seats are same priced)
+  3. Price of the ticket (assuming all the seats are same priced)
   
-  4.. Movie title 
+  4. Movie title 
   
   5. brief storyline
   
