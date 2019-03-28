@@ -45,7 +45,7 @@ For many people, it would be really convenient if they can buy or refund movie t
   
   c. inputs required; number (movie title) & date
 
-**2. Movie information
+**2. Movie information**
   
   i. Start time 
   
@@ -63,7 +63,7 @@ For many people, it would be really convenient if they can buy or refund movie t
   
   viii. Return to main
 
-**3. Add record
+**3. Add record**
   
   i. when the customer completes purchasing the movie ticket, the information of movie he/she bought will be added under customer file and stored
     
@@ -81,7 +81,7 @@ For many people, it would be really convenient if they can buy or refund movie t
     
     v7. Return to main
 
-**4. View the record
+**4. View the record**
   
   i. Customers can only view their private information 
   
@@ -89,15 +89,15 @@ For many people, it would be really convenient if they can buy or refund movie t
   
   iii. Return to main
 
-**5. Record editing
+**5. Record editing**
   
   i. Return to main
 
-**6. Sorting the Best customer of the Month
+**6. Sorting the Best customer of the Month**
   
   i. Sort out the customer(s) with most purchased history each month and give some benefits
 
-**7. Searching the customer file by the staff
+**7. Searching the customer file by the staff**
   
   i. Permitted for the staff/manager only
   
@@ -105,7 +105,7 @@ For many people, it would be really convenient if they can buy or refund movie t
   
   iii. Allow customers to receive movie tickets at the cinema counter which is purchased online
 
-**8. Exit
+**8. Exit**
 
 
 **Why is this System Useful** 
