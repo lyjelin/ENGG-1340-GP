@@ -47,21 +47,21 @@ For many people, it would be really convenient if they can buy or refund movie t
 
 **2. Movie information**
   
-  i. Start time 
+  1.. Start time 
   
-  ii. Movie hour
+  2.. Movie hour
   
-  iii. Price of the ticket (assuming all the seats are same priced)
+  3.. Price of the ticket (assuming all the seats are same priced)
   
-  iv. Movie title 
+  4.. Movie title 
   
-  v. brief storyline
+  5. brief storyline
   
-  vi. Movie genre
+  6. Movie genre
   
-  vii. Ticket availability - if all seats are booked: sold out
+  7. Ticket availability - if all seats are booked: sold out
   
-  viii. Return to main
+  8. Return to main
 
 **3. Add record**
   
@@ -79,7 +79,7 @@ For many people, it would be really convenient if they can buy or refund movie t
     
     6. seat number 
     
-    v7. Return to main
+    7. Return to main
 
 **4. View the record**
   
@@ -107,6 +107,7 @@ For many people, it would be really convenient if they can buy or refund movie t
 
 **8. Exit**
 
+**///////////////////////////////////**
 
 **Why is this System Useful** 
 
