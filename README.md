@@ -1,12 +1,11 @@
 # ONLINE MOVIE TICKETING_ENGG 1340 Project
 
-## u3035603930 Yoon Jeong, Lee
-## u3035557363 Jaemin Kim
+## u3035603930 Yoon Jeong, Lee      u3035557363 Jaemin Kim
 
-#An online movie ticketing system allowing users to buy, refund or edit their online booked movie tickets written in C++11
+### An online movie ticketing system allowing users to buy, refund or edit their online booked movie tickets written in C++11
 
 
-###Problem Statement
+### Problem Statement
 
  Movie industry have been loved by myriads of people. Many people will normally purchase their movie tickets in cinema counter -offline- and directly head into watch movie. However, in many walk-in cases, there are high chance of customers missing their movie tickets on desired time due to sold out or even because they arrived late (with unexpected reasons). 
  
