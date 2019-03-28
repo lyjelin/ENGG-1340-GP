@@ -25,7 +25,7 @@ For many people, it would be really convenient if they can buy or refund movie t
 
 **Our system is divided into 8 functions. The following are the details of basic features proposed function.**
 
-1. Main page
+**1. Main page
   
   a. Creates customer file to store customer information
     
@@ -45,67 +45,67 @@ For many people, it would be really convenient if they can buy or refund movie t
   
   c. inputs required; number (movie title) & date
 
-2. Movie information
+**2. Movie information
   
-  a. Start time 
+  i. Start time 
   
-  b.Movie hour
+  ii. Movie hour
   
-  c. Price of the ticket (assuming all the seats are same priced)
+  iii. Price of the ticket (assuming all the seats are same priced)
   
-  d. Movie title 
+  iv. Movie title 
   
-  e. brief storyline
+  v. brief storyline
   
-  f. Movie genre
+  vi. Movie genre
   
-  g. Ticket availability - if all seats are booked: sold out
+  vii. Ticket availability - if all seats are booked: sold out
   
-  h. Return to main
+  viii. Return to main
 
-3. Add record
+**3. Add record
   
-  a. when the customer completes purchasing the movie ticket, the information of movie he/she bought will be added under customer file and stored
+  i. when the customer completes purchasing the movie ticket, the information of movie he/she bought will be added under customer file and stored
     
-    i. user name
+    1. user name
     
-    ii. movie title
+    2. movie title
     
-    iii. movie hour
+    3. movie hour
     
-    iv. date
+    4. date
     
-    v. time
+    5. time
     
-    vi. seat number 
+    6. seat number 
     
-    vii. Return to main
+    v7. Return to main
 
-4. View the record
+**4. View the record
   
-  a. Customers can only view their private information 
+  i. Customers can only view their private information 
   
-  b. Only staffs are allowed to view everyone’s information
+  ii. Only staffs are allowed to view everyone’s information
   
-  c. Return to main
+  iii. Return to main
 
-5. Record editing
+**5. Record editing
   
-  a. Return to main
+  i. Return to main
 
-6. Sorting the Best customer of the Month
+**6. Sorting the Best customer of the Month
   
-  a. Sort out the customer(s) with most purchased history each month and give some benefits
+  i. Sort out the customer(s) with most purchased history each month and give some benefits
 
-7. Searching the customer file by the staff
+**7. Searching the customer file by the staff
   
-  a. Permitted for the staff/manager only
+  i. Permitted for the staff/manager only
   
-  b. Staff will search customer information by the name of the customer and view the record
+  ii. Staff will search customer information by the name of the customer and view the record
   
-  c. Allow customers to receive movie tickets at the cinema counter which is purchased online
+  iii. Allow customers to receive movie tickets at the cinema counter which is purchased online
 
-8. Exit
+**8. Exit
 
 
 **Why is this System Useful** 
