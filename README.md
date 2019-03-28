@@ -25,7 +25,7 @@ For many people, it would be really convenient if they can buy or refund movie t
 
 **Our system is divided into 8 functions. The following are the details of basic features proposed function.**
 
-**1. Main page
+**1. Main page**
   
   a. Creates customer file to store customer information
     
