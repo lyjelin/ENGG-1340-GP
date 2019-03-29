@@ -97,7 +97,7 @@ For many people, it would be really convenient if they can buy or refund movie t
   
   i. Sort out the customer(s) with most purchased history each month and give some benefits
 
-**8. Exit**
+**7. Exit**
 
 **///////////////////////////////////**
 
