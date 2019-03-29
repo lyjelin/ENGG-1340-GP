@@ -1,6 +1,6 @@
 # ONLINE MOVIE TICKETING_ENGG 1340 Project
 
-## u3035603930 Yoon Jeong, Lee      u3035557363 Jaemin Kim
+## u3035603930 Lee Yoon Jeong,      u3035557363 Jaemin Kim
 
 ### An online movie ticketing system allowing users to buy, refund or edit their online booked movie tickets written in C++11
 
@@ -23,7 +23,7 @@ For many people, it would be really convenient if they can buy or refund movie t
 
 5. Edit user information if there is any change
 
-**Our system is divided into 8 functions. The following are the details of basic features proposed function.**
+**Our system is divided into 7 functions. The following are the details of basic features proposed function.**
 
 **1. Main page**
   
@@ -96,14 +96,6 @@ For many people, it would be really convenient if they can buy or refund movie t
 **6. Sorting the Best customer of the Month**
   
   i. Sort out the customer(s) with most purchased history each month and give some benefits
-
-**7. Searching the customer file by the staff**
-  
-  i. Permitted for the staff/manager only
-  
-  ii. Staff will search customer information by the name of the customer and view the record
-  
-  iii. Allow customers to receive movie tickets at the cinema counter which is purchased online
 
 **8. Exit**
 
