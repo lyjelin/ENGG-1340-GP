@@ -250,5 +250,254 @@ void modifyRecord()
 
 	
 	
-	
 	FILE *fileOut;
+	fileOut = fopen("customer_temp.txt", "w");
+	
+	for (z=0;z<loopCount; z++){
+				fputs(data[z].bookNum, fileOut);
+				fputs(data[z].name, fileOut);
+				fputs(data[z].movie_name, fileOut);
+				fputs(data[z].movie_schedule, fileOut);
+				fputs(data[z].time, fileOut);
+				fputs(data[z].numofGuests, fileOut);
+				fputs(data[z].houseNum, fileOut);
+				fputs(data[z].ticketType, fileOut);
+				fputs(data[z].totalFee, fileOut);
+		};	
+	fclose(fileOut);
+	printf("Succesfuly updated!");
+	remove("customer.txt");
+	rename("customer_temp.txt","customer.txt");
+	fflush(stdin);getchar();
+	
+	printf("\nWould you like to modify another record? (y/n) ");
+	fflush(stdin);
+	scanf("%c",&YesAndNo);
+	if(!checkYN(YesAndNo)){
+	    	goto loop;	
+		}
+	else{
+		printf("Exiting to main menu.");
+		fflush(stdin);getchar();
+	}
+}
+
+
+
+
+void searchRecord()
+{      
+       int z ; 
+       int searchmbkn;
+       char search[100];
+       char yorno,yorno1;
+       struct record data[100];	
+       do{	
+       	fflush(stdin);
+              FILE *fp;
+	          fp = fopen("customer.txt","r");
+	           printf("\nPlease enter the booking number that you want to search: ");
+	            scanf("%d",&searchmbkn);
+	            
+	       while(fgets(data[z].bookNum, 80, fp) != '\0'){   //Load all data in customer.txt into the struct array
+			fgets(data[z].name, 80, fp);
+			fgets(data[z].movie_name, 80, fp);
+			fgets(data[z].movie_schedule, 80, fp);
+			fgets(data[z].time, 80, fp);
+			fgets(data[z].numofGuests, 80, fp);
+			fgets(data[z].houseNum, 80, fp);
+			fgets(data[z].ticketType, 80, fp);
+			fgets(data[z].totalFee, 80, fp);
+			z++;
+			}
+	fclose(fp);
+	
+       	    printf("\nMovie Booking Number:\t%s", data[searchmbkn-1].bookNum);
+			printf("\nCustomer name:\t\t%s", data[searchmbkn-1].name);
+			printf("\nMovie name:\t\t%s", data[searchmbkn-1].movie_name);
+			printf("\nMovie schedule:\t\t%s", data[searchmbkn-1].movie_schedule);
+			printf("\nTime:\t\t\t%s", data[searchmbkn-1].time);
+			printf("\nNumber of guests:\t%s", data[searchmbkn-1].numofGuests);
+			printf("\nHouse number:\t\t%s", data[searchmbkn-1].houseNum);
+			printf("\nTicket Type(s):\t\t%s", data[searchmbkn-1].ticketType);
+			printf("\nTotal Fees:\t\t$%s\n", data[searchmbkn-1].totalFee);
+
+		    fflush(stdin);
+		    printf("\nSearch another Movie Ticketing record? (y/n)");
+    	    scanf("%c",&yorno);
+            }while(yorno=='y');
+
+}
+void deleteRecord()
+{
+    int booking;
+    int i=0;
+    int z;
+    FILE *fp1,*fp2;
+    struct record data[100];
+    char yesorno;
+	char enter,YesAndNo;
+	
+    do{
+		printf("Display current records? (y/n) ");
+		fflush(stdin);
+		scanf("%c",&YesAndNo);
+    	if(!checkYN(YesAndNo)){
+	    fflush(stdin);
+		DisplayAll(1);	
+		fflush(stdin);	
+	
+    printf("Please enter the booking number you want to delete:");
+    scanf("%d",booking);
+    
+    fp1=fopen("customer.txt","r");
+    if(!fp1){
+    	exit(1);
+	}
+	while(fgets(data[z].bookNum, 80, fp1) != '\0'){   //Load all data in customer.txt into the struct array
+			fgets(data[z].name, 80, fp1);
+			fgets(data[z].movie_name, 80, fp1);
+			fgets(data[z].movie_schedule, 80, fp1);
+			fgets(data[z].time, 80, fp1);
+			fgets(data[z].numofGuests, 80, fp1);
+			fgets(data[z].houseNum, 80, fp1);
+			fgets(data[z].ticketType, 80, fp1);
+			fgets(data[z].totalFee, 80, fp1);
+			z++;
+			}
+    
+	fp2=fopen("text.txt","w");
+	for(i=0;i<100;i++){
+    if(i==booking-1)
+		continue;
+	else{
+    	fputs(data[i].name,fp2);
+		fputs(data[i].movie_name,fp2);
+		fputs(data[i].movie_schedule,fp2);
+		fputs(data[i].time,fp2);
+		fputs(data[i].numofGuests,fp2);
+		fputs(data[i].houseNum,fp2);
+		fputs(data[i].ticketType,fp2);
+		fputs(data[i].totalFee,fp2);
+	}    }                    
+	fclose(fp1);
+	fclose(fp2);
+	printf("\nRecord deleted sucessfully!");
+	remove("customer.txt");
+	rename("text.txt","customer.txt");
+	printf("\nDo you want to delete another record(y/n):");
+	scanf("%c%c",&yesorno,&enter);
+    }else{
+	yesorno='n';
+	}
+	}while(yesorno=='y');
+}
+
+
+
+void Movie_Info()
+{
+	char MovOp[80];
+	int i;
+	int count=0;
+	int input, target;
+	struct Info data[10];
+	char YesAndNo;
+	
+	FILE *fileIn;
+	
+	fileIn = fopen("movie.txt","r");
+	if (fileIn == NULL)
+	{
+		printf("Error in opening file!");
+		exit(1);
+	}
+	while(fgets(data[count].order, 80, fileIn) != '\0')
+		{
+			fgets(data[count].MovieName, 80, fileIn);
+			fgets(data[count].Time, 80, fileIn);
+			count++;
+		}
+			
+	printf("Welcome to Movie Schedule Checking site!\n");
+	printf("---------------------------------------\n");
+	loop:
+	printf("\nPlease type a movie name to find out the schedule: \n");
+	printf("1)Avengers:Endgame 2)Fantastic Beasts: The Crime of Grindelwald 3)The Chronicles of Narnia: The Voyage of the Dawn Trader 4)Harry Potter and The Deathly Hollows: Part2 5)Captain Marvel 6)Beauty and the Beast 7)Midnight Sun \n");
+	scanf("%d",&input);
+	
+	for (i=0; i<count; i++)
+	{
+		target = atoi(data[i].order);
+		
+		if (input==target)
+		{
+			printf("Name of the Movie:\t%sSchedule:\t\t%s",data[i].MovieName,data[i].Time);
+			break;
+		}
+	}
+	fflush(stdin); getchar();
+	
+	printf("\nWould you like to check another schedule? (y/n) ");
+	fflush(stdin);
+	scanf("%c",&YesAndNo);
+	if(!checkYN(YesAndNo)){
+	    	goto loop;	
+		}
+	else{
+		printf("Exiting to main menu.");
+		fflush(stdin);getchar();
+	fclose(fileIn);
+	}
+}
+void Addcomment()
+{
+	FILE *commentfp;
+	commentfp=fopen("comment.txt","a+");
+	struct data info;
+	int i=0;
+	if(commentfp==NULL){
+		printf("The COMMENT CORNER will open soon!^.^");
+		exit(0);
+	}
+	shuu:
+	printf("Welcome to the COMMENT CORNER!\n");
+	printf("==============================\n");
+	
+		printf("Please share your views on the movies!>.0\n\n");
+		printf("Movie name:");
+		fflush(stdin);
+		gets(info.filmname);
+		printf("Score<1-10>:");
+		gets(info.starcount);
+		printf("Comment:");
+		gets(info.comment);
+		fprintf(commentfp,"%s",info.filmname);
+		fprintf(commentfp,"\n%s",info.starcount);
+		fprintf(commentfp,"\n%s",info.comment);
+		fclose(commentfp);
+	 	printf("\nExit to main menu.");
+		fflush(stdin);getchar();
+}
+void Displaycomment()
+{
+	FILE *commentfp;
+	struct data info;
+	char chr;
+	int z=0;
+	printf("\t\t\tDisplay Newest Movie Comment \t\t\t\t");
+	printf("\t\t----------------------------------------------\n");
+	commentfp=fopen("comment.txt","r");
+	
+		fscanf(commentfp, "%s",&info.filmname);
+		printf("Filename:\t\t%s", info.filmname);
+		fscanf(commentfp, "%s",&info.starcount);
+		printf("\nStar count:\t\t%s", info.starcount);
+		fscanf(commentfp, "%s",&info.comment);
+		printf("\ncomment:\t\t%s\n", info.comment);
+			
+	fclose(commentfp);
+	printf("\nExit to main menu.");
+	fflush(stdin);getchar();
+}
+
