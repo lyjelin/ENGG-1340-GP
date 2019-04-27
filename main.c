@@ -44,3 +44,42 @@ int main()
         case 3:
             system("cls");
             modifyRecord();
+	    system("cls");
+            goto Start;
+        case 4:
+            system("cls");
+            searchRecord();
+            system("cls");
+            goto Start;
+        case 5:
+            system("cls");
+            deleteRecord();
+            system("cls");
+            goto Start;
+		case 6:
+			system("cls");
+			Movie_Info();
+			system("cls");
+			goto Start;
+		case 7:
+			system("cls");
+			Addcomment();
+			system("cls");
+			goto Start;
+		case 8:
+			system("cls");
+			Displaycomment();
+			system("cls");
+			goto Start;
+		case 0:
+			exit(0);
+
+
+        default:
+            printf("\nPlease input number<1-8> only,try again: ");
+            
+        }
+    
+    }while(!check);
+    return 0;
+}
