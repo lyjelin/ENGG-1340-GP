@@ -1,3 +1,7 @@
+#include <studio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <windows.h>
 
 int checkYN(char check)
 {
