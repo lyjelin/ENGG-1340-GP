@@ -1,0 +1,21 @@
+1
+Avengers; Endgame
+9:00 10:00 11:00 12:00 13:00 14:00
+2
+Fantastic Beasts; The Crimes of Grindelwald
+11:30 12:00 13:30 14:00 15:30
+3
+The Chronicles of Narnia; The Voyage of the Dawn Trader
+13:00 15:00 17:00 19:00
+4
+Harry Potter and The Deathly Hollows: Part 2
+10:00 10:30 12:00 12:30 14:00 14:30 15:00 16:30
+5
+Captin Marvel
+9:30 11:30 13:30 15:30 17:30 19:30
+6
+Beauty and the Beast
+11:00 12:00 15:00 16:00 17:00 18:00
+7
+Midnight Sun
+9:00 12:00 14:00 15:00 18:00
